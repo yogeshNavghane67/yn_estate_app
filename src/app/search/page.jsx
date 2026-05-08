@@ -1,8 +1,10 @@
 'use client';
-import { useEffect, useState } from 'react';
+import { Suspense, useEffect, useState } from 'react';
 import ListingItem from '../../components/ListingItem';
 import { useRouter, useSearchParams } from 'next/navigation';
 import Footer from '@/components/Footer';
+
+
 export default function Search() {
   const router = useRouter();
   const searchParams = useSearchParams();
